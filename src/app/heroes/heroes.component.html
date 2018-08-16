@@ -1,0 +1,13 @@
+observableHeroes: 
+<ul>
+   <li *ngFor="let hero of observableHeroes | async">
+      {{hero.id}} - {{hero.name}}
+   </li>
+</ul>
+
+heroes:
+<ul>
+   <li *ngFor="let hero of heroes">
+      {{hero.id}} - {{hero.name}}
+   </li>
+</ul>
