@@ -31,6 +31,7 @@ export class HeroesComponent implements OnInit {
     this.getHeroes();
 
     // via http
+    // https://www.concretepage.com/angular-2/angular-2-async-pipe-example
     this.observableHeroes = this.heroService.getHeroesWithObservable();
 
     // this does not work. says invalid pipe argument
