@@ -1,7 +1,14 @@
 observableHeroes: don't use async pipe if it is a subscribe
 <ul>
-   <li *ngFor="let hero of observableHeroes | async;  count as count, index as i">
-      {{i}}: {{hero.id}} - {{hero.name}}
+   <li *ngFor="let hero of observableHeroes;  count as count, index as i">
+      {{i}}: {{hero.id}} - {{hero.name | titlecase}}
+   </li>
+</ul>
+
+keyvalue |
+<ul>
+   <li *ngFor="let hero of heroes | keyvalue">
+      {{hero.key}} -- {{hero.value}}
    </li>
 </ul>
 

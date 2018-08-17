@@ -33,11 +33,11 @@ export class HeroesComponent implements OnInit {
     // via http
     // https://www.concretepage.com/angular-2/angular-2-async-pipe-example
     // only works if the template html uses | asyc
-    this.observableHeroes = this.heroService.getHeroesWithObservable();
+    //this.observableHeroes = this.heroService.getHeroesWithObservable();
 
     // this does not work if the template html uses | asyc!!
     // makes sense since this is already asyc by subscribing
-    //this.getObservableHeroes();
+    this.getObservableHeroes();
   }
 
   onSelect(hero: Hero): void {
