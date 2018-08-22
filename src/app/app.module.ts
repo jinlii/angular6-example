@@ -4,10 +4,14 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { AlertComponent } from './alert/alert.component';
 
 @NgModule({
   declarations: [
-    AppComponent, HeroesComponent
+    AppComponent, HeroesComponent, AlertComponent
+  ],
+  entryComponents: [
+    AlertComponent
   ],
   imports: [
     BrowserModule, HttpModule
