@@ -27,6 +27,8 @@ export class AppModule {
     const customButton = createCustomElement(ButtonComponent, { injector });
     customElements.define('custom-button', customButton);
     // custom-button can then be used in index.html as a native element
+    // <custom-button label="First Value"></custom-button>
+
   }
 
   ngDoBootstrap() {}
